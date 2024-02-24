@@ -1,0 +1,28 @@
+
+*{
+    text-align: start;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: rgba(12, 1, 1, 0.979);
+    color: antiquewhite;
+
+ 
+}
+#p{
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+#certificates{
+    font-size: 40px;
+    text-align: center;
+    color: blueviolet;
+
+}
+#certifications {
+    font-size: 35px;
+    text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
