@@ -1,90 +1,161 @@
-.container {
-   display: grid;
-   grid-template-rows:  80px 400px 100px;
-   grid-template-columns: auto ;
-   grid-template-areas: "navigation"
-   "content"
-   "contact";
-   background-color: rgb(63, 65, 63);
-   box-shadow: 20px;
-}
-  
-.start {
-   text-align: center;
-
-}
-#links {
-   grid-area: navigation;
- display: flex;
- align-items: center;
- justify-content: center;
- background-color: rgb(63, 65, 63);
- color: antiquewhite;
-}
-ul {  
-   list-style-type: none;  
-   margin: 0;  
-   padding: 0px;  
-   overflow: hidden;  
-   background-color: lightgray;  
- }  
-   
- li {  
-   float: left;  
-   
- }  
-   
- li a {  
-   display: block;  
-   color: blue;  
-  font-size:20px;  
-   text-align: center;  
-   padding: 10px 20px;  
-   text-decoration: none;  
- }  
- .active{  
- background-color: gray;  
- color: white;  
- }  
- li a:hover {  
-   background-color: orange;  
-   color: white;  
- }  
-#content {
-  grid-area: content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: gray;
-  color: antiquewhite;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  gap: 10px;
-  
-}
-.home {
-   font-size: medium;
-   font-weight: 200;
-}
-#contact {
- grid-area: contact;
- display: flex;
- align-items: center;
- justify-content: center;
- background-color:rgb(117, 116, 116);
- color: whitesmoke;
- gap: 10px;
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, ol {
+   margin: 0;
+   padding: 0;
+ }
  
-}
-#body {
-   
-   background-color:rgb(63, 65, 63) ;
+ /* Global styles */
+ body {
+   font-family: Arial, sans-serif;
+   background-color:rgb(3, 3, 61); /* Dark navy blue color */
+   background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Add starry night sky background image */
+   opacity: 0.5; /* Reduce the opacity of the starry night sky background image */
+ }
+ 
+ 
+ /* Set the color for the content */
+ body {
+   color: rgb(182, 113, 44); /* Light brown color for the content */
+ }
+ 
+ /* Keep the titles of each section unchanged */
+ h2, h3 {
+   color: #888; /* Light grey color for the titles */
+ }
+ 
+ /* Add more styles as needed */
+ 
+ 
+ 
+ 
+ 
+ /* Navigation styles */
+ nav {
+   background-color: rgb(63, 65, 63);
    color: antiquewhite;
-   align-items: center;
-}
-
-#start {
-   display: flex;
-   align-items: center;
-}
+   text-align: center; /* Center the navigation */
+   padding: 10px 0;
+   position: fixed; /* Fix navigation position */
+   width: 100%; /* Make navigation full width */
+   top: 0; /* Position navigation at the top */
+ }
+ 
+ nav ul {
+   list-style-type: none;
+ }
+ 
+ nav ul li {
+   display: inline-block; /* Display navigation items inline */
+ }
+ 
+ nav ul li a {
+   color: antiquewhite;
+   text-decoration: none;
+   padding: 10px 20px;
+   display: block;
+ }
+ 
+ nav ul li a:hover {
+   background-color: darkslategrey;
+ }
+ 
+ /* Main content styles */
+ .main-content {
+   height: 100vh; /* Set height of each section to 100% viewport height */
+ }
+ 
+ .container {
+   padding: 20px;
+   background-color: rgba(20, 20, 20, 0.8); /* Light black background with transparency */
+   min-height: 100vh; /* Set minimum height to 100% of viewport height */
+   display: flex; /* Use flexbox to center content vertically */
+   justify-content: center; /* Center content horizontally */
+   align-items: center; /* Center content vertically */
+ }
+ 
+ /* Section styles */
+ .content {
+   text-align: center;
+   font-size: 24px; /* Increase font size of content */
+ }
+ 
+ /* Headline styles */
+ h2, h3 {
+   color: #888; /* Light grey color for headlines */
+ }
+ 
+ /* Projects section */
+ #projects ul,
+ #education ul,
+ #certifications ul,
+ #experience ul {
+   text-align: center; /* Center lists within sections */
+   margin: 0 auto; /* Center the lists horizontally */
+   max-width: 600px; /* Set max width for the lists */
+   padding-left: 0; /* Remove left padding for lists */
+ }
+ 
+ /* Project list items */
+ #projects ul li,
+ #education ul li,
+ #certifications ul li,
+ #experience ul li {
+   text-align: left; /* Align list items to the left */
+   padding-left: 20px; /* Add left padding for list items */
+ }/* Footer styles */
+ footer {
+   background-color: rgb(63, 65, 63); /* Background color for the footer */
+   color: antiquewhite;
+   text-align: center;
+   padding: 20px 0;
+   position: fixed; /* Fix footer position */
+   width: 100%; /* Set footer width to 100% of the viewport width */
+   bottom: 0; /* Position footer at the bottom */
+   height: 5px; /* Set fixed height for the footer */
+   display: flex; /* Use flexbox */
+   justify-content: center; /* Center content horizontally */
+   align-items: center; /* Center content vertically */
+ }
+ 
+ /* Footer content styles */
+ footer p {
+   margin: 0 8px; /* Reset margin for footer content */
+ }
+ 
+ footer a {
+   color: antiquewhite; /* Set default link color */
+   text-decoration: none; /* Remove underline from links */
+ }
+ 
+ footer a:hover {
+   text-decoration: underline; /* Add underline on hover */
+ }
+ 
+ /* Contact container styles */
+ .contact-container {
+   height: 100%; /* Set height to match the footer */
+   display: flex; /* Use flexbox */
+   align-items: center; /* Center content vertically */
+   justify-content: center; /* Center content horizontally */
+   background-color: transparent; /* Remove background color */
+ }
+ 
+ /* Style underlined links within contact container */
+ .contact-container a {
+   color: rgb(3, 3, 48); /* Set color for underlined links */
+ }
+ 
+ .list{
+   font-size: large;
+   font-family: fantasy;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
